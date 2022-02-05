@@ -9,7 +9,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background: #FFFFFF url(https://cdn.pixabay.com/photo/2015/01/31/05/05/background-618226_1280.png) no-repeat fixed center;
+    background: #FFFFFF url("background.webp") no-repeat fixed center;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -89,12 +89,12 @@
 
     <div class="container">
         <div class="navbar">
-            <img src="https://www.freepnglogos.com/uploads/music-logo-black-and-white-png-21.png" stretchflex-startflex-endclass="logo" height="64">
+            <img src="mainlogo.png" stretchflex-startflex-endclass="logo" height="64">
 
             <ul>
-                <li><a href="#">HOME</a></li>
+
                 <li><a href="#">PLAY</a></li>
-                <li><a href="#">BROWSE</a></li>
+
                 <li><a href="#">ABOUT</a></li>
             </ul>
         </div>
@@ -103,20 +103,27 @@
                 <h1>MUSIC<br> PLAYER</h1>
             </div>
             <div class="right-col">
-                <p>Play ▶ </p>
+                <p>Play </p>
                 <br>
-                <img src="https://cdn3.iconfinder.com/data/icons/multimedia-128/24/202_-_Multimedia_pause_icon_circle_button-1024.png" id="icon">
+                <img src="play.png" id="icon">
+
             </div>
         </div>
         <audio id="Music">
-            <source src="https://drive.google.com/file/d/1c9Zav_7Y6IOGwN0b4hKcyXqxBNPfBsT-/view?usp=sharing" <="" audio=""> <script>var Music = document.getElementById("Music");
-var icon = document.getElementById("icon")
-icon.onclick = function() {
+            <source src="STAY.mp3" <="" audio="">
+   <script>
+     var Music = document.getElementById("Music");
+     var icon = document.getElementById("icon");
+     icon.onclick = function() {
     if (Music.paused) {
         Music.play();
-        icon.src = "https://cdn3.iconfinder.com/data/icons/multimedia-128/24/202_-_Multimedia_pause_icon_circle_button-1024.png"
+        icon.src = "pause.png"
     } else {
         Music.pause();
-        icon.src = "https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/000000/external-play-essentials-icongeek26-glyph-icongeek26.png"
+        icon.src = "play.png"
     }
-}</script></audio></div></body>
+}
+</script>
+</audio>
+</div>
+</body>
