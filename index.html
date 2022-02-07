@@ -9,7 +9,7 @@
 .container {
     height: 100vh;
     width: 100%;
-    background: #FFFFFF url("background.webp") no-repeat fixed center;
+    background: #FFFFFF url("images/background.webp") no-repeat fixed center;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -89,11 +89,11 @@
 
     <div class="container">
         <div class="navbar">
-            <img src="mainlogo.png" stretchflex-startflex-endclass="logo" height="64">
+            <img src="images/mainlogo.png" stretchflex-startflex-endclass="logo" height="64">
 
             <ul>
 
-                <li><a href="#">PLAY</a></li>
+                <li><a href="source.html">PLAY</a></li>
 
                 <li><a href="#">ABOUT</a></li>
             </ul>
@@ -105,22 +105,22 @@
             <div class="right-col">
                 <p>Play </p>
                 <br>
-                <img src="play.png" id="icon">
+                <img src="images/play.png" id="icon">
 
             </div>
         </div>
         <audio id="Music">
-            <source src="STAY.mp3" <="" audio="">
+            <source src="music/S1.mp3" <="" audio="">
    <script>
      var Music = document.getElementById("Music");
      var icon = document.getElementById("icon");
      icon.onclick = function() {
     if (Music.paused) {
         Music.play();
-        icon.src = "pause.png"
+        icon.src = "images/pause.png"
     } else {
         Music.pause();
-        icon.src = "play.png"
+        icon.src = "images/play.png"
     }
 }
 </script>
